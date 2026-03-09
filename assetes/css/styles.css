@@ -1,0 +1,59 @@
+* {
+    --color-red-- : rgb(218, 70, 70);
+    --color-blu-- : rgb(85, 0, 244);
+    --color-light-blu-- : rgb(8, 250, 238);
+    --color-beg-- : rgb(250, 202, 160);
+    --color-yellow-- : rgb(187, 189, 46);
+    --color-gray-- : rgb(209, 209, 199);
+    --color-purple-- : rgb(130, 24, 196);
+}
+
+table, 
+thead,
+tbody {
+    border: 5px solid var(--color-red--);
+    border-collapse: separate; /*ячейки имеют собственные, раздельные рамки */
+    width: 400px;
+}
+
+table {
+    margin-top: 35px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+th,
+td {
+    border: 3px solid var(--color-blu--);   
+}
+
+.best-sellers{
+    color: var(--color-red--);
+}
+
+.best-sellers::after {
+    content: "#05";
+    color: var(--color-purple--);
+}
+
+/* Для нечетных строк*/
+.bs-body tr:nth-child(odd) {
+    background-color: var(--color-yellow--);
+}
+
+/* Для четных строк*/
+.bs-body tr:nth-child(even) {
+    background-color: var(--color-gray--);
+}
+
+.bs-table td:first-child{
+    background-color: var(--color-light-blu--);
+}
+
+.bs-header {
+    background-color: var(--color-beg--);
+}
+
+tfoot {
+    background-color: var(--color-red--);
+}
